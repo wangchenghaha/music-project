@@ -6,7 +6,10 @@ function resolve(dir) {
 
 module.exports = {
   chainWebpack(config) {
-    config.resolve.alias.set("assets", resolve("src/assets"));
+    config.resolve.alias
+      .set("assets", resolve("src/assets"))
+      .set("components", resolve("src/components"))
+      .set("views", resolve("src/views"));
   },
   pluginOptions: {
     "style-resources-loader": {
