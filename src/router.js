@@ -14,6 +14,10 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
+      path: "/",
+      redirect: "/recommend"
+    },
+    {
       path: "/recommend",
       name: "recommend",
       component: () => import("views/recommend/recommend.vue")

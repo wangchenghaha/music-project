@@ -1,6 +1,6 @@
 <template>
-  <div>
-
+  <div class="recommend">
+    推荐榜单
   </div>
 </template>
 
