@@ -9,6 +9,8 @@ module.exports = {
     config.resolve.alias
       .set("assets", resolve("src/assets"))
       .set("components", resolve("src/components"))
+      .set("api", resolve("src/api"))
+      .set("base", resolve("src/base"))
       .set("views", resolve("src/views"));
   },
   pluginOptions: {
